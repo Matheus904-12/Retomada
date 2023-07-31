@@ -1,5 +1,141 @@
-/*RESET CSS*/
+/* reset */
 * {
     margin: 0;
     padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+/* fim reset */
+/* fontes */
+@font-face {
+    font-family: "OpenSans Regular";
+    src: url(Font/OpenSans-Regular.ttf);
+}
+
+@font-face {
+    font-family: "OpenSans Bold";
+    src: url(Font/OpenSans-Bold.ttf);
+}
+
+
+
+@font-face {
+    font-family: "Poppins Bold";
+    src: url(Font/Poppins-Bold.ttf);
+}
+
+@font-face {
+    font-family: "Poppins Regular";
+    src: url(Font/Poppins-Regular.ttf);
+}
+
+
+
+@font-face {
+    font-family: "Roboto Bold";
+    src: url(Font/Roboto-Bold.ttf);
+}
+
+@font-face {
+    font-family: "Roboto Regular";
+    src: url(Font/Roboto-Regular.ttf);
+}
+/* fim fontes */
+/*  */
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 100px;
+} 
+/* fim */
+
+/* contato */
+.contato {
+    background-color: #106eea;
+}
+
+.contato .container {
+    justify-content: flex-start;
+    height: 30px;
+}
+
+.contato .container a {
+    font: 500 20px "OpenSans Regular";
+    color: #fff;
+    margin-right: 40px;
+}
+/* fim contato */
+/* header */
+.logo .nome {
+    font: 700 40px "Poppins Bold";
+}
+
+.menu a {
+    font: 500 22px "OpenSans Regular";
+    color: #000000;
+    margin-left: 60px;
+}
+/* fim header */
+/* inicio */
+.inicio {
+    background-image: url(Img/Vitral.png);
+    height: 400px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.inicio .container {
+    justify-content: flex-end;
+    height: 400px;
+}
+
+.titulo-inicio {
+    font: 700 40px "Poppins Bold"
+}
+
+.texto-inicio {
+    font: 500 40px "Poppins Regular"
+}
+/* fim inicio */
+/* titulo */
+.titulo {
+    font: 700 40px "Roboto Bold";
+    color: #000000;
+}
+
+.span {
+    color: #106EEA
+}
+/* fim titulo */
+/* texto */
+.texto {
+    font: 500 20px 'OpensSans Regular';
+}
+/* fim texto */
+
+/* sobre nós */
+.conteudo {
+    text-align: center;
+}
+
+.sobreNos .imagem img {
+    width: 500px;
+}
+
+.sobreNos .conteudo .texto {
+    text-align: justify;
+}
+
+.sobreNos .conteudo {
+    margin-right: 100px;
 }
