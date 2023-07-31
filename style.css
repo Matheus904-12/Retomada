@@ -1,4 +1,4 @@
-/* reset */
+/* RESET */
 * {
     margin: 0;
     padding: 0;
@@ -14,8 +14,11 @@ img {
     width: 100%;
     height: auto;
 }
-/* fim reset */
-/* fontes */
+
+/* FIM DO RESET */
+
+/* INICIO DAS FONTES */
+
 @font-face {
     font-family: "OpenSans Regular";
     src: url(Font/OpenSans-Regular.ttf);
@@ -38,8 +41,6 @@ img {
     src: url(Font/Poppins-Regular.ttf);
 }
 
-
-
 @font-face {
     font-family: "Roboto Bold";
     src: url(Font/Roboto-Bold.ttf);
@@ -49,17 +50,22 @@ img {
     font-family: "Roboto Regular";
     src: url(Font/Roboto-Regular.ttf);
 }
-/* fim fontes */
-/*  */
+
+/* FIM DAS FONTES */
+
+/* INICIO */
+
 .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin: 0 100px;
-} 
-/* fim */
+}
 
-/* contato */
+/* FINAL */
+
+/* INICIO DO CONTATO */
+
 .contato {
     background-color: #106eea;
 }
@@ -74,8 +80,11 @@ img {
     color: #fff;
     margin-right: 40px;
 }
-/* fim contato */
-/* header */
+
+/* FIM DO CONTATO */
+
+/* INICIO DO HEADER */
+
 .logo .nome {
     font: 700 40px "Poppins Bold";
 }
@@ -85,8 +94,11 @@ img {
     color: #000000;
     margin-left: 60px;
 }
-/* fim header */
-/* inicio */
+
+/* FIM DO HEADER */
+
+/* INICIO DO INICIO */
+
 .inicio {
     background-image: url(Img/Vitral.png);
     height: 400px;
@@ -95,35 +107,45 @@ img {
 }
 
 .inicio .container {
-    justify-content: flex-end;
+    justify-content: center;
+    flex-direction: column;
+    align-items: flex-end;
     height: 400px;
 }
 
 .titulo-inicio {
-    font: 700 40px "Poppins Bold"
+    font: 700 80px "Poppins Bold";
 }
 
 .texto-inicio {
-    font: 500 40px "Poppins Regular"
+    font: 500 40px "Poppins Regular";
 }
-/* fim inicio */
-/* titulo */
+
+/* FINAL DO INICIO */
+
+/* INICIO DO TITULO */
+
 .titulo {
     font: 700 40px "Roboto Bold";
     color: #000000;
 }
 
-.span {
-    color: #106EEA
+span {
+    color: #106EEA;
 }
-/* fim titulo */
-/* texto */
-.texto {
-    font: 500 20px 'OpensSans Regular';
-}
-/* fim texto */
 
-/* sobre nós */
+/* FIM DO TITULO */
+
+/* INICIO DO TEXTO */
+
+.texto {
+    font: 500 20px "OpenSans Regular"
+}
+
+/* FINAL DO TEXTO */
+
+/* INICIO DO SOBRE NÓS */
+
 .conteudo {
     text-align: center;
 }
@@ -138,4 +160,155 @@ img {
 
 .sobreNos .conteudo {
     margin-right: 100px;
+}
+
+/* FINAL DO SOBRE NOS */
+
+/* INICIO DAS INFOS */
+
+.infos .quadrados .quadrado img {
+    width: 100px;
+}
+
+.infos .quadrados {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.quadrado {
+    background-color: #f1f6fe;
+    border: 1px solid #8ca9ce;
+    border-radius: 7px;
+    text-align: center;
+    padding: 15px 20px;
+    margin: 0 20px;
+    width: 230px;
+}
+
+/* FIM DAS INFOS */
+
+/* INICIO DA DIVISÃO */
+
+.divisao {
+    background-color: #1150a3;
+    height: 2px;
+}
+
+/* FIM DA DIVISÃO */
+
+/* INICIO DOS SERVIÇOS */
+
+.servicos .container {
+    flex-direction: column;
+}
+
+.servico {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.servico .servico-titulo {
+    font: 700 24px "Roboto Bold";
+    text-align: center;
+}
+
+.servico .servico-nome {
+    border: 2px solid #8ca8ce;
+    width: 275px;
+    height: 180px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 15px 30px;
+}
+
+/* FIM DOS SERVIÇOS */
+
+/* INICIO DO TIME */
+
+.equipe .container {
+    flex-direction: column;
+}
+
+.equipe .pessoas {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.equipe .pessoas .pessoa {
+    border: 1px solid #000000;
+    border-radius: 10px;
+    margin: 0 25px;
+}
+
+.equipe .conteudo .texto {
+    text-align: justify;
+    margin: 30px 60px;
+}
+
+/* FIM TIME */
+
+/* INICIO DOS FORMS */
+
+.formulario .container {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.formulario .informacoes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.endereco {
+    width: 250px;
+    border: 3px solid #1150a3;
+    height: 400px;
+    text-align: center;
+    padding: 80px 20px;
+    margin-right: 20px;
+    border-radius: 10px;
+}
+
+input {
+    height: 60px;
+    background-color: #dcdcdc;
+    margin-bottom: 15px;
+    border-radius: 7px;
+    padding: 5px 8px;
+}
+
+textarea {
+    background-color: #dcdcdc;
+}
+
+.form form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+button {
+    background-color: #106eea;
+    color: #fff;
+    font: 700 20px "Roboto Bold";
+    width: 300px;
+    border-radius: 15px;
+    padding: 10px 15px;
+    margin: 30px 60px;
+}
+
+/* FIM DOS FORMS */
+
+main section,
+main .conteudo,
+.divisao {
+    margin-bottom: 80px;
 }
